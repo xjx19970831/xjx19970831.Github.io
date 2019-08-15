@@ -1,20 +1,32 @@
-# Site settings
-title: cjx兄弟连
-description: Jekyll Theme Minimal Resume
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: Hacker-Blog
+description: "A Jekyll Blog Theme For Hackers"
+author:
+  name: "SomeHacker"
+  email: "someone@somewebsite.somedomain"
+  url: "https://ashishchaudhary.in/hacker-blog"
 
-# User settings
-username: 陈土豆
-user_description: 第一天，感觉很充实，安装了一个新的系统（刚用一天的win 就这样没了 会想你的） <a href="https://raoweijiapng.github.io" target="_blank">https://raoweijiapng.github.io</a>
-user_title: chenjiaxing
-email: mauriurraco@gmail.com
-# twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
-# gplus_username:  lorem_ipsum
+baseurl: /
 
-# Google-analytics
-google-analytics:
-  id: ""
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 3
+paginate_path: /page/:num/
 
-exclude: ['package.json', 'src' , 'node_modules']
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+owner : "SomeHacker"
+year : "2018"

@@ -1,94 +1,109 @@
-# Jekyll Resume Theme
+# The Hacker-Blog theme
 
-Live demo at https://jekyll-theme-minimal-resume.netlify.com/
+*Hacker-Blog is a minimalistic, responsive jekyll theme built for hackers. It is based on the [hacker theme](https://github.com/pages-themes/hacker) for project pages.*
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/24d80ae8-c3d9-4645-a6d8-9e97fc8dec3c/deploy-status)](https://app.netlify.com/sites/jekyll-theme-minimal-resume/deploys)
+Demo: [https://ashishchaudhary.in/hacker-blog](https://ashishchaudhary.in/hacker-blog)
 
-# Stack
+### Included
 
-![](https://img.shields.io/badge/jekyll-✓-blue.svg)
-![](https://img.shields.io/badge/html5-✓-blue.svg)
-![](https://img.shields.io/badge/sass-✓-blue.svg)
-![](https://img.shields.io/badge/sweet--scroll-✓-blue.svg)
-![](https://img.shields.io/badge/particle--js-✓-blue.svg)
-![](https://img.shields.io/badge/font--awesome-✓-blue.svg)
-![](https://img.shields.io/badge/devicon-✓-blue.svg)
-![](https://img.shields.io/badge/gulp-✓-blue.svg)
+1. Pagination
+2. SEO tags
+3. Archive Page
+4. RSS
+5. Sitemap 
 
-***
+## Usage
 
-<h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
+1. Fork and Clone this repository
+2. Customize your blog
+3. Add a new post in `_posts/` directory with proper name format (as shown in placeholder posts)
+4. Commit and push to master 
 
-***
+## Local Build
 
-# Screenshot
+If you want to see the changes before pushing the blog to Github, do a local build.
 
-<p align="center">
-  <img src="https://github.com/murraco/jekyll-theme-minimal-resume/blob/master/screenshot.png" width="90%" />
-</p>
+1. [`gem install jekyll`](https://jekyllrb.com/docs/installation/#install-with-rubygems)
+2. `gem install jekyll-seo-tag`
+3. (`cd` to the blog directory, then:) `jekyll serve --watch --port 8000`
+4. Go to `http://0.0.0.0:8000/` in your web browser.
 
-# Quick Setup
+*Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:8000/BASEURL/` instead.*
 
-1. Install Jekyll: `gem install jekyll bundler`
-2. For this repository and clone your fork
-3. Edit `_config.yml` to personalize your site
+### Local build using docker
 
-# Settings
+```bash
+docker run --rm -p 8000:8000 \
+  --volume="LOCATION_OF_YOUR_JEKYLL_BLOG:/srv/jekyll" \
+  -it tocttou/jekyll:3.5 \
+  jekyll serve --watch --port 8000
+```
 
-You have to fill some informations on `_config.yml` to customize your site:
+Replace `LOCATION_OF_YOUR_JEKYLL_BLOG` with the full path of your blog repository. Visit `http://localhost:8000/` to access the blog.
 
-## Site settings
+*Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:8000/BASEURL/` instead.*
+
+## Customizing
+
+### Configuration variables
+
+Edit the `_config.yml` file and set the following variables:
+
 ```yml
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
+title: [The title of your blog]
+description: [A short description of your blog's purpose]
+author:
+  name: [Your name]
+  email: [Your email address]
+  url: [URL of your website]
+
+baseurl: [The base url for this blog.]
+
+paginate: [Number of posts in one paginated section (default: 3)]
+owner: [Your name]
+year: [Current Year]
 ```
 
-## User settings
+*Note: All links in the site are prepended with `baseurl`. Default `baseurl` is `/`. Any other baseurl can be setup like `baseurl: /hacker-blog`, which makes the site available at `http://domain.name/hacker-blog`.*
+
+Additionally, you may choose to set the following optional variables:
+
 ```yml
-username: Lorem Ipsum
-user_description: Software Engineer at Lorem Ipsum Dolor
-user_title: Mauricio Urraco
-email: mauriurraco@gmail.com
+google_analytics: [Your Google Analytics tracking ID]
 ```
 
-> Don't forget to change your URL before you deploy your site!
+### About Page
 
-# Color and Particle Customization
+Edit `about.md`
 
-- Color Customization
-  - Edit the `.sass` variables
-- Particle Customization
-  - Edit the json data in particle function in `app.js`
-  - Refer to `Particle.js` for help
-  
-# Content
+### Layout
 
-You can (and should) edit the `.html` files for adding your own information, icons, working experience, social links or whatever you want to add. I.e.:
+If you would like to modify the site style:
 
-```html
-<a aria-label="My Github" target="_blank" href="https://github.com/murraco">
-  <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-</a>
-```
+**HTML**
 
-# Running locally
+Footer: Edit `_includes/footer.html`
 
-In order to compile the assets and run `Jekyll` locally you need to follow those steps:
+Header: Edit `_includes/header.html`
 
-1. Install Jekyll
-2. Run `jekyll build`
-3. Start and http-server in the folder `_site`
+Links in the header: Edit `_includes/links.html`
 
-# Contribution
+Meta tags, blog title display, and additional CSS: Edit `_includes/head.html`
 
-- Report issues
-- Open pull request with improvements
-- Spread the word
-- Reach out to me directly at <mauriurraco@gmail.com>
+Index page layout: Edit `_layouts/default.html`
 
-# Donate
+Post layout: Edit `_layouts/post.html`
 
-`btc: 36V7HqqENSKn6iFCBuE4iCdtB29uGoCKzN`
+**CSS**
 
-`eth: 0xB419E3E9fa2233383E0877d442e55C34B9C944dD`
+Site wide CSS: Edit `_sass/base.scss`
+
+Custom CSS: Make `_sass/custom.scss` and use it. Then add `@import "custom";` to `css/main.scss`
+
+**404 page**
+
+Edit `404.md`
+
+## License
+
+CC0 1.0 Universal
