@@ -6,11 +6,9 @@ description: Jekyll Theme Minimal Resume
 
 # User settings
 username: 陈土豆
-user_description: 台球,国服诸葛亮,元气弹
-冷却值：35 消耗：120 [2] 
-诸葛亮短暂蓄力后锁定目标发出一击强力元气弹，造成450/630/810（+55%法术加成）点法术伤害；目标每损失1%最大生命值元气弹就会增加2%伤害；蓄力时诸葛亮可以移动，并且可以使用时空穿梭；元气弹飞行过程中碰撞到敌方非英雄目标，将会触发同等伤害并将其击飞0.5秒；元气弹可触发1次谋略刻印；如果元气弹直接击败敌方英雄，立即发动策谋之刻，并减少80%元气弹的冷却时间。释放目标如果为敌方英雄，且元气弹没有触碰到任何敌方英雄，返回该技能80%冷却时间
+user_description: 第一天，感觉很充实，安装了一个新的系统（刚用一天的win 就这样没了 会想你的） <a href="https://raoweijia.github.io" target="_blank">https://raoweijiapng.github.io</a>
 user_title: chenjiaxing
-email: cjx19970831@163.com
+email: mauriurraco@gmail.com
 # twitter_username: lorem_ipsum
 # github_username:  lorem_ipsum
 # gplus_username:  lorem_ipsum
