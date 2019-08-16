@@ -10,11 +10,19 @@ title: 兄弟会--第一天
 
 看美女
 
-### Small image
+### 乔欣
 
 ![](http://img0.imgtn.bdimg.com/it/u=3298728661,552425777&fm=26&gp=0.jpg)
 
- 
+ 代码：  1.git clone http://github.com/username/username.github.io
+
+​                2.cd username.github.io 
+
+​                3.git add .
+
+​                4.git commit -m "initial commit"
+
+​                5.git push -u origin master
 
 ```
 台球
