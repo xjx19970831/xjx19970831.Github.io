@@ -10,7 +10,9 @@ title: 兄弟会--第一天
 
 看美女
 
-http://img0.imgtn.bdimg.com/it/u=3298728661,552425777&fm=26&gp=0.jpg
+### Small image
+
+![](http://img0.imgtn.bdimg.com/it/u=3298728661,552425777&fm=26&gp=0.jpg)
 
  
 
