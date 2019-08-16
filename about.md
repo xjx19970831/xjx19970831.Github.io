@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 土豆
 ---
 
-Something about me.
+大家好，我叫陈佳兴，沈阳理工大学 大四。喜欢台球 有空微信约一波   微信：c15241525331
