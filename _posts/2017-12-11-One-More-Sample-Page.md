@@ -1,5 +1,5 @@
 ---
-title: One More Sample Page
+title: 兄弟会-- 第二天
 published: true
 ---
 
@@ -95,11 +95,11 @@ end
 
 ### Small image
 
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+![](http://img0.imgtn.bdimg.com/it/u=3298728661,552425777&fm=26&gp=0.jpg)
 
 ### Large image
 
-![](https://guides.github.com/activities/hello-world/branching.png)
+![](https://guides.github.com/activities/hello-world/branching.png)![img](http://img0.imgtn.bdimg.com/it/u=3298728661,552425777&fm=26&gp=0.jpg)
 
 
 ### Definition lists can be used with HTML syntax.
