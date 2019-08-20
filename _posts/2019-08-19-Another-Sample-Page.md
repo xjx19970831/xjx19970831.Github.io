@@ -40,6 +40,8 @@ published: true
    7. git  diff 查看区别
    
    8. git rm 文件名     删除文件
+   
+   9. 
 
 
 
