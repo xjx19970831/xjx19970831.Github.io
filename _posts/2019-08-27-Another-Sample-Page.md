@@ -1,5 +1,5 @@
 ---
-title: 兄弟会-第九天--日报
+title: 兄弟会-第九天--linux命令
 published: true　　
 ---
 

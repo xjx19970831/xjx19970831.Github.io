@@ -1,5 +1,5 @@
 ---
-title: 兄弟会-第五天--日报
+title: 兄弟会-第五天--linux常用命令
 published: true
 ---
 
