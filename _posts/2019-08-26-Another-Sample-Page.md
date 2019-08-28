@@ -1,6 +1,6 @@
 ---
 title: 兄弟会-第五天--linux常用命令
-published: true
+
 ---
 
    1. 权限
