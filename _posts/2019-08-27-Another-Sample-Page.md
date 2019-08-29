@@ -3,7 +3,7 @@ title: 兄弟会-第九天--linux命令
 published: true　　
 ---
 
-###Linux 完结
+### Linux 完结
 
 **系统信息** 
 arch 显示机器的处理器架构
